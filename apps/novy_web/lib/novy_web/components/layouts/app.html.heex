@@ -1,0 +1,29 @@
+<header>
+  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
+    <div class="flex items-center gap-4">
+      <a href="/">
+        <img src={~p"/images/logo.svg"} width="36" />
+      </a>
+      <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
+        v<%= Application.spec(:phoenix, :vsn) %>
+      </p>
+    </div>
+    <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
+
+      <!-- LIEN DE CONNEXION VIA DISCORD -->
+      <a
+        href="/auth/discord"
+        class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg"
+      >
+        Connexion via Discord
+      </a>
+      <.live_component module={NovyWeb.LoggedComponent} id="logged" />
+    </div>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>
