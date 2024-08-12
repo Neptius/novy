@@ -1,5 +1,7 @@
 defmodule NovyWeb.DiscordAuth do
+
   import Plug.Conn
+  import Phoenix.Controller
 
   alias Assent.{Config, Strategy.Discord}
 
@@ -47,7 +49,7 @@ defmodule NovyWeb.DiscordAuth do
         conn
         |> put_session(:current_user, user)
         |> put_session(:current_token, token)
-        |> Phoenix.Controller.redirect(to: "/")
+        |> redirect(to: "/")
 
       {:error, error} ->
         # Authorizaiton failed
@@ -58,11 +60,33 @@ defmodule NovyWeb.DiscordAuth do
   end
 
   def fetch_discord_user(conn, _opts) do
-    with user when is_map(user) <- get_session(conn, :discord_user) do
-      assign(conn, :current_user, user["email"])
+    with user when is_map(user) <- get_session(conn, :current_user) do
+      assign(conn, :current_user, user)
     else
       _ -> conn
     end
+  end
+
+  def log_out_user(conn) do
+    user_token = get_session(conn, :user_token)
+    user_token && Accounts.delete_user_session_token(user_token)
+
+    if live_socket_id = get_session(conn, :live_socket_id) do
+      NovyWeb.Endpoint.broadcast(live_socket_id, "disconnect", %{})
+    end
+
+    conn
+    |> renew_session()
+    |> redirect(to: "/")
+  end
+
+
+  defp renew_session(conn) do
+    delete_csrf_token()
+
+    conn
+    |> configure_session(renew: true)
+    |> clear_session()
   end
 
   def on_mount(:mount_current_user, _params, session, socket) do
