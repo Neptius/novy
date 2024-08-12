@@ -61,7 +61,8 @@ defmodule NovyWeb.MixProject do
       {:bandit, "~> 1.5"},
       {:assent, "~> 0.2.9"},
       {:certifi, "~> 2.4"},
-      {:ssl_verify_fun, "~> 1.1"}
+      {:ssl_verify_fun, "~> 1.1"},
+      {:req, "~> 0.5.0"}
     ]
   end
 

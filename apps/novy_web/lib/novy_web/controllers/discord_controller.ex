@@ -12,8 +12,6 @@ defmodule NovyWeb.DiscordController do
   end
 
   def delete(conn, _params) do
-    conn
-    |> put_flash(:info, "Logged out successfully.")
-    |> DiscordAuth.log_out_user()
+    DiscordAuth.logout(conn)
   end
 end

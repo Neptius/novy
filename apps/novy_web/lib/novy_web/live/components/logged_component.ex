@@ -10,13 +10,20 @@ defmodule NovyWeb.LoggedComponent do
           <img class="rounded-full w-10" src={@current_user["picture"]} />
         </div>
 
-        <a href="/auth/discord/logout" class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-lg">
-          Logout
-        </a>
+        <.link
+          href={~p"/auth/discord/logout"}
+          method="delete"
+          class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-lg"
+        >
+          Déconnexion
+        </.link>
       <% else %>
-        <a href="/auth/discord" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg">
+        <.link
+          href={~p"/auth/discord"}
+          class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg"
+        >
           Connexion via Discord
-        </a>
+        </.link>
       <% end %>
     </div>
     """

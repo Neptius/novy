@@ -1,5 +1,4 @@
 defmodule NovyWeb.DiscordAuth do
-
   import Plug.Conn
   import Phoenix.Controller
 
@@ -46,8 +45,12 @@ defmodule NovyWeb.DiscordAuth do
     |> case do
       {:ok, %{user: user, token: token}} ->
         # Authorization succesful
+        discord_user = get_discord_user(token)
+        profil = Map.merge(user, discord_user)
+
         conn
-        |> put_session(:current_user, user)
+        |> put_session(:live_socket_id, "users_socket:#{profil["id"]}")
+        |> put_session(:current_user, profil)
         |> put_session(:current_token, token)
         |> redirect(to: "/")
 
@@ -67,7 +70,7 @@ defmodule NovyWeb.DiscordAuth do
     end
   end
 
-  def log_out_user(conn) do
+  def logout(conn) do
     user_token = get_session(conn, :user_token)
 
     if live_socket_id = get_session(conn, :live_socket_id) do
@@ -78,7 +81,6 @@ defmodule NovyWeb.DiscordAuth do
     |> renew_session()
     |> redirect(to: "/")
   end
-
 
   defp renew_session(conn) do
     delete_csrf_token()
@@ -98,5 +100,19 @@ defmodule NovyWeb.DiscordAuth do
         user
       end
     end)
+  end
+
+  defp get_discord_user(token) do
+    req =
+      Req.new(base_url: "https://discord.com/api/users/@me")
+      |> Req.Request.put_header("Authorization", "Bearer #{token["access_token"]}")
+      |> Req.get()
+
+    case req do
+      {:ok, %Req.Response{status: 200, body: body}} ->
+        body
+      _ ->
+        %{}
+    end
   end
 end
