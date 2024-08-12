@@ -9,15 +9,7 @@
       </p>
     </div>
     <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
-
-      <!-- LIEN DE CONNEXION VIA DISCORD -->
-      <a
-        href="/auth/discord"
-        class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg"
-      >
-        Connexion via Discord
-      </a>
-      <.live_component module={NovyWeb.LoggedComponent} id="logged" />
+      <.live_component module={NovyWeb.LoggedComponent} current_user={@current_user} id="logged" />
     </div>
   </div>
 </header>

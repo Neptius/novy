@@ -1,12 +1,19 @@
 defmodule NovyWeb.LoggedComponent do
-  use Phoenix.LiveComponent
+  use NovyWeb, :live_component
 
   def render(assigns) do
     ~H"""
     <div>
-      <h1>Welcome, <%= @current_user["preferred_username"] %></h1>
-      <p>Here's your user info:</p>
-      <pre><%= inspect(@current_user) %></pre>
+      <%= if @connected do %>
+        <div class="flex items-center gap-2">
+          <p class="capitalize">Welcome, <%= @current_user["preferred_username"] %></p>
+          <img class="rounded-full w-10" src={@current_user["picture"]} />
+        </div>
+      <% else %>
+        <a href="/auth/discord" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg">
+          Connexion via Discord
+        </a>
+      <% end %>
     </div>
     """
   end

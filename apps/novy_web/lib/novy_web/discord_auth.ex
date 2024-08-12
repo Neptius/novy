@@ -71,8 +71,8 @@ defmodule NovyWeb.DiscordAuth do
 
   defp mount_current_user(socket, session) do
     Phoenix.Component.assign_new(socket, :current_user, fn ->
-      if user = session["discord_user"] do
-        user["email"]
+      if user = session["current_user"] do
+        user
       end
     end)
   end
