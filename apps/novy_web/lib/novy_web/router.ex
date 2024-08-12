@@ -33,6 +33,7 @@ defmodule NovyWeb.Router do
 
     get "/discord", DiscordController, :request
     get "/discord/callback", DiscordController, :callback
+    get "/discord/logout", DiscordController, :delete
   end
 
   # Other scopes may use custom stacks.
