@@ -9,6 +9,10 @@ defmodule NovyWeb.LoggedComponent do
           <p class="capitalize">Welcome, <%= @current_user["preferred_username"] %></p>
           <img class="rounded-full w-10" src={@current_user["picture"]} />
         </div>
+
+        <a href="/logout" class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-lg">
+          Logout
+        </a>
       <% else %>
         <a href="/auth/discord" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg">
           Connexion via Discord
