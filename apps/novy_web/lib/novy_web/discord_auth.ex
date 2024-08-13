@@ -115,4 +115,18 @@ defmodule NovyWeb.DiscordAuth do
         %{}
     end
   end
+
+  defp get_discord_user_servers(token) do
+    req =
+      Req.new(base_url: "https://discord.com/api/users/@me/guilds")
+      |> Req.Request.put_header("Authorization", "Bearer #{token["access_token"]}")
+      |> Req.get()
+
+    case req do
+      {:ok, %Req.Response{status: 200, body: body}} ->
+        body
+      _ ->
+        %{}
+    end
+  end
 end

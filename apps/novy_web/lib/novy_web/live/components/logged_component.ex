@@ -3,7 +3,7 @@ defmodule NovyWeb.LoggedComponent do
 
   def render(assigns) do
     ~H"""
-    <div>
+    <div class="flex gap-2">
       <%= if @current_user do %>
         <div class="flex items-center gap-2">
           <p class="capitalize">Welcome, <%= @current_user["preferred_username"] %></p>
