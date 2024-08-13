@@ -12,6 +12,8 @@ defmodule NovyWeb.Application do
       # Start a worker by calling: NovyWeb.Worker.start_link(arg)
       # {NovyWeb.Worker, arg},
       # Start to serve requests, typically the last entry
+
+      NovyWeb.Presence,
       NovyWeb.Endpoint
     ]
 

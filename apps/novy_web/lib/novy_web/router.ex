@@ -24,7 +24,6 @@ defmodule NovyWeb.Router do
     live_session :default,
       on_mount: {NovyWeb.DiscordAuth, :mount_current_user} do
       live "/", HomeLive
-      live "/hi", HiWidgetLive
     end
   end
 
