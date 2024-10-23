@@ -21,6 +21,13 @@ defmodule NovyWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/hi", HiWidgetLive
+  end
+
+  scope "/auth/discord", NovyWeb do
+    pipe_through [:browser]
+    get "/", DiscordAuthController, :request
+    get "/callback", DiscordAuthController, :callback
   end
 
   # Other scopes may use custom stacks.

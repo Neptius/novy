@@ -23,7 +23,7 @@ defmodule NovyWeb.MixProject do
   def application do
     [
       mod: {NovyWeb.Application, []},
-      extra_applications: [:logger, :runtime_tools, :inets],
+      extra_applications: [:logger, :runtime_tools, :inets]
     ]
   end
 
@@ -61,7 +61,8 @@ defmodule NovyWeb.MixProject do
       {:bandit, "~> 1.5"},
       {:assent, "~> 0.2.9"},
       {:certifi, "~> 2.4"},
-      {:ssl_verify_fun, "~> 1.1"}
+      {:ssl_verify_fun, "~> 1.1"},
+      {:req, "~> 0.4"}
     ]
   end
 

@@ -350,4 +350,35 @@ defmodule Novy.Accounts do
       {:error, :user, changeset, _} -> {:error, changeset}
     end
   end
+
+  def get_or_create_user_from_oauth("discord", %{
+        "email" => email,
+        "preferred_username" => pseudo,
+        "sub" => discord_id
+      }) do
+    case get_user_by_email(email) do
+      nil ->
+        # user needs some password, lets generate it and not tell them.
+        pw = :crypto.strong_rand_bytes(30) |> Base.encode64(padding: false)
+
+        {:ok, user} =
+          register_user(%{email: email, password: pw, discord_id: discord_id, pseudo: pseudo})
+
+        user
+
+      user ->
+        user
+    end
+  end
+
+  # def get_user_by_email_or_register(email) when is_binary(email) do
+  #   case get_user_by_email(email) do
+  #     nil ->
+  #       # user needs some password, lets generate it and not tell them.
+  #       pw = :crypto.strong_rand_bytes(30) |> Base.encode64(padding: false)
+  #       {:ok, user} = register_user(%{email: email, password: pw})
+  #       user
+  #     user -> user
+  #   end
+  # end
 end
