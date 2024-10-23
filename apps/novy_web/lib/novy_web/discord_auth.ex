@@ -57,9 +57,6 @@ defmodule NovyWeb.DiscordAuth do
 
         conn
         |> NovyWeb.UserAuth.log_in_user(user_record)
-        # |> put_session(:discord_user, user)
-        # |> put_session(:discord_user_token, token)
-        # |> Phoenix.Controller.redirect(to: "/")
 
       {:error, error} ->
         # Authorizaiton failed
