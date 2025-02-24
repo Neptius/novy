@@ -1,7 +1,7 @@
 import Config
 
 # Only in tests, remove the complexity from the password hashing algorithm
-config :bcrypt_elixir, :log_rounds, 1
+config :argon2_elixir, t_cost: 1, m_cost: 8
 
 # Configure your database
 #
@@ -20,7 +20,7 @@ config :novy, Novy.Repo,
 # you can enable the server option below.
 config :novy, NovyWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "ohR5pYFeKRTBYeGbitM2EuC5nJVlD+VIw5lAlhu+C09ZHl9qvgtclWyFFvcjxCnv",
+  secret_key_base: "JWSSJ13zWXRbbLoP/UVUSXwhyr6HbZW7qYiDNK5phTrdF2dJtBxVq/1QwAOI62Gp",
   server: false
 
 # In test we don't send emails

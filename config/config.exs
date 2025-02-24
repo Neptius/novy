@@ -20,7 +20,7 @@ config :novy, NovyWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Novy.PubSub,
-  live_view: [signing_salt: "ztFmsXKu"]
+  live_view: [signing_salt: "SUvUK6WN"]
 
 # Configures the mailer
 #

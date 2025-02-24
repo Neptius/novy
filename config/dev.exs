@@ -13,7 +13,7 @@ config :novy, NovyWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "4x1eH0SyYYqIidVo3xquV/FsaWUhxAWGsZG1Qg4sGye1JwBNf2OrduB2KcoJi/SL",
+  secret_key_base: "IeHRAAFobym+7N0FBbp5BUltWS0scCjU1HUbglb51tbcjx9xWEGLXUuZ0YShD1Fc",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:novy, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:novy, ~w(--watch)]}
@@ -73,5 +73,3 @@ config :phoenix_live_view,
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
-
-import_config "dev.secret.exs"

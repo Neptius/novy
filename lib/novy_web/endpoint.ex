@@ -7,7 +7,7 @@ defmodule NovyWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_novy_key",
-    signing_salt: "h7x2u3Uc",
+    signing_salt: "y+rDpXAL",
     same_site: "Lax"
   ]
 
