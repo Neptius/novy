@@ -18,9 +18,9 @@ defmodule NovyWeb.Router do
   end
 
   scope "/", NovyWeb do
-    pipe_through :browser
+    pipe_through [:browser]
 
-    get "/", PageController, :home
+    # get "/", PageController, :home
   end
 
   # Other scopes may use custom stacks.
@@ -80,6 +80,8 @@ defmodule NovyWeb.Router do
       on_mount: [{NovyWeb.UserAuth, :mount_current_user}] do
       live "/users/confirm/:token", UserConfirmationLive, :edit
       live "/users/confirm", UserConfirmationInstructionsLive, :new
+
+      live "/", HomeLive.Index, :index
 
       live "/todos", TodoLive.Index, :index
       live "/todos/new", TodoLive.Index, :new

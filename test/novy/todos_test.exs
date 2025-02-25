@@ -35,7 +35,12 @@ defmodule Novy.TodosTest do
 
     test "update_todo/2 with valid data updates the todo" do
       todo = todo_fixture()
-      update_attrs = %{description: "some updated description", title: "some updated title", completed: false}
+
+      update_attrs = %{
+        description: "some updated description",
+        title: "some updated title",
+        completed: false
+      }
 
       assert {:ok, %Todo{} = todo} = Todos.update_todo(todo, update_attrs)
       assert todo.description == "some updated description"

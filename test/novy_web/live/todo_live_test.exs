@@ -5,7 +5,11 @@ defmodule NovyWeb.TodoLiveTest do
   import Novy.TodosFixtures
 
   @create_attrs %{description: "some description", title: "some title", completed: true}
-  @update_attrs %{description: "some updated description", title: "some updated title", completed: false}
+  @update_attrs %{
+    description: "some updated description",
+    title: "some updated title",
+    completed: false
+  }
   @invalid_attrs %{description: nil, title: nil, completed: false}
 
   defp create_todo(_) do
