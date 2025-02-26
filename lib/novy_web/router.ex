@@ -83,10 +83,11 @@ defmodule NovyWeb.Router do
 
     live_session :current_user,
       on_mount: [{NovyWeb.UserAuth, :mount_current_user}] do
-      live "/users/confirm/:token", UserConfirmationLive, :edit
-      live "/users/confirm", UserConfirmationInstructionsLive, :new
 
       live "/", HomeLive
+
+      live "/users/confirm/:token", UserConfirmationLive, :edit
+      live "/users/confirm", UserConfirmationInstructionsLive, :new
 
       live "/todos", TodoLive.Index, :index
       live "/todos/new", TodoLive.Index, :new

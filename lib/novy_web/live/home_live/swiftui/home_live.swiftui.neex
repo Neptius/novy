@@ -1,0 +1,24 @@
+<ScrollView>
+    <VStack alignment="leading">
+        <HStack>
+            <Text style={
+                "
+                font(.subheadline);
+                fontWeight(.semibold);
+                foregroundColor(.teal);
+                "
+            }>Phoenix Framework</Text>
+            <Text style={
+                "
+                font(.footnote);
+                padding(.horizontal, 8);
+                padding(.vertical, 4)
+                background(Color.teal.opacity(0.1))
+                cornerRadius(12)
+                foregroundStyle(.teal);
+                "
+            }>v{Application.spec(:novy, :vsn)}</Text>
+            
+        </HStack>
+    </VStack>
+</ScrollView>

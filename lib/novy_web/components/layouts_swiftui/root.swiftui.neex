@@ -1,5 +1,8 @@
 <.csrf_token />
 <Style url={~p"/assets/app.swiftui.styles"} />
-<NavigationStack>
+<NavigationStack style={"
+  frame(maxWidth: .infinity, maxHeight: .infinity);
+  background(Color(hue: 0.61666667, saturation: 0.62, brightness: 0.16));
+"}>
   {@inner_content}
 </NavigationStack>
