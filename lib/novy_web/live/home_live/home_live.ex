@@ -1,4 +1,4 @@
-defmodule NovyWeb.HomeLive.Index do
+defmodule NovyWeb.HomeLive do
   use NovyWeb, :live_view
   use NovyNative, :live_view
 

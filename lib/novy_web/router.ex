@@ -86,7 +86,7 @@ defmodule NovyWeb.Router do
       live "/users/confirm/:token", UserConfirmationLive, :edit
       live "/users/confirm", UserConfirmationInstructionsLive, :new
 
-      live "/", HomeLive.Index, :index
+      live "/", HomeLive
 
       live "/todos", TodoLive.Index, :index
       live "/todos/new", TodoLive.Index, :new
