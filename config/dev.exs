@@ -48,7 +48,10 @@ config :novy, NovyWeb.Endpoint,
     patterns: [
       ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/novy_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"lib/novy_web/(controllers|live|components)/.*(ex|heex)$",
+      ~r"lib/novy_web/(live|components)/.*neex$",
+      ~r"lib/novy_web/styles/.*ex$",
+      ~r"priv/static/*.styles$"
     ]
   ]
 
@@ -75,3 +78,7 @@ config :phoenix_live_view,
 config :swoosh, :api_client, false
 
 import_config "dev.secret.exs"
+
+config :live_view_native_stylesheet,
+  annotations: true,
+  pretty: true

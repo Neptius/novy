@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0239B188A21FE3F2690177C7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1514232C0B8226C4BCCF186 /* ErrorView.swift */; };
+		114A07C189AFCABBB90C701B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1514232C0B8226C4BCCF186 /* ErrorView.swift */; };
+		1DF9B9382CD0596627CE6CA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D436FEADE7C847E199EB596 /* Assets.xcassets */; };
+		1EF3970B5327817B217C8241 /* LiveViewNative in Frameworks */ = {isa = PBXBuildFile; productRef = 797F6D022AAE8315D996666E /* LiveViewNative */; };
+		21D7DF84A7D3C788FC192C26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74019C487187B40D3CC6609 /* Preview Assets.xcassets */; };
+		432BEF44F6CD506E4741C2DA /* Novy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25E6167008FA4E696BA532 /* Novy.swift */; };
+		5430AB8A314F4E1EB0B9E9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D436FEADE7C847E199EB596 /* Assets.xcassets */; };
+		5F61FC7B60C709089CF10D78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74019C487187B40D3CC6609 /* Preview Assets.xcassets */; };
+		62473B74FE3CD5AC7A68633C /* LiveViewNativeLiveForm in Frameworks */ = {isa = PBXBuildFile; productRef = E913B6857B525F7E12158F3E /* LiveViewNativeLiveForm */; };
+		704025A183E18F7795C1A94D /* ReconnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A685969F73D617D7B854C469 /* ReconnectingView.swift */; };
+		7F1C4654523AF6B08AC9AFF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283F95CBAE3318107933B7F /* ContentView.swift */; };
+		7F6E10EC2D1573049B181156 /* ReconnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A685969F73D617D7B854C469 /* ReconnectingView.swift */; };
+		91F5CDE0291EB161748F9F57 /* LiveViewNativeLiveForm in Frameworks */ = {isa = PBXBuildFile; productRef = 045ABF66CB9F9D5B0D82350B /* LiveViewNativeLiveForm */; };
+		A43FAA03A2C1D6CD65087076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283F95CBAE3318107933B7F /* ContentView.swift */; };
+		B07EB42574CEBF714458801A /* DisconnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3185D0CFC541ACE186E89E /* DisconnectedView.swift */; };
+		B265CC1632E528BA6708DEB5 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822DAA0D5E0D462B272420F /* ConnectingView.swift */; };
+		B887A7CB320E6F706B9E13F4 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822DAA0D5E0D462B272420F /* ConnectingView.swift */; };
+		C0406439A0B8C63283C8C8AB /* LiveViewNative in Frameworks */ = {isa = PBXBuildFile; productRef = D9C8C1AC8C98C88A90BA572D /* LiveViewNative */; };
+		EE853EE65FE1DB434F7C5614 /* Novy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25E6167008FA4E696BA532 /* Novy.swift */; };
+		F8C12762D83489514822CE72 /* DisconnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3185D0CFC541ACE186E89E /* DisconnectedView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D436FEADE7C847E199EB596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D3185D0CFC541ACE186E89E /* DisconnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectedView.swift; sourceTree = "<group>"; };
+		A685969F73D617D7B854C469 /* ReconnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconnectingView.swift; sourceTree = "<group>"; };
+		D12E8ACF2F4704F86EB28C48 /* Novy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Novy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D283F95CBAE3318107933B7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC25E6167008FA4E696BA532 /* Novy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Novy.swift; sourceTree = "<group>"; };
+		E1514232C0B8226C4BCCF186 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E74019C487187B40D3CC6609 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E822DAA0D5E0D462B272420F /* ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingView.swift; sourceTree = "<group>"; };
+		F122C8D1049ACAA0E490B1E6 /* Novy Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Novy Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EFDFDB07499AD23F6A50D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0406439A0B8C63283C8C8AB /* LiveViewNative in Frameworks */,
+				62473B74FE3CD5AC7A68633C /* LiveViewNativeLiveForm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F995EADF359FC73E7DFD3416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF3970B5327817B217C8241 /* LiveViewNative in Frameworks */,
+				91F5CDE0291EB161748F9F57 /* LiveViewNativeLiveForm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BBB96F7A0A30DAA46F7E7A5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E74019C487187B40D3CC6609 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A999D9F84B9391D33F145550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F122C8D1049ACAA0E490B1E6 /* Novy Watch App.app */,
+				D12E8ACF2F4704F86EB28C48 /* Novy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C746B1B02441CFCA23F37BE3 = {
+			isa = PBXGroup;
+			children = (
+				C7E87890A4B949B9A34A61CB /* Novy */,
+				A999D9F84B9391D33F145550 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7E87890A4B949B9A34A61CB /* Novy */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB96F7A0A30DAA46F7E7A5 /* Preview Content */,
+				0D436FEADE7C847E199EB596 /* Assets.xcassets */,
+				E822DAA0D5E0D462B272420F /* ConnectingView.swift */,
+				D283F95CBAE3318107933B7F /* ContentView.swift */,
+				8D3185D0CFC541ACE186E89E /* DisconnectedView.swift */,
+				E1514232C0B8226C4BCCF186 /* ErrorView.swift */,
+				DC25E6167008FA4E696BA532 /* Novy.swift */,
+				A685969F73D617D7B854C469 /* ReconnectingView.swift */,
+			);
+			path = Novy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F348258A32EF136ED4B563AE /* Novy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74AD3B909F8260BF139B723D /* Build configuration list for PBXNativeTarget "Novy" */;
+			buildPhases = (
+				22D49CBCC3A3E70B65417781 /* Sources */,
+				91A01CF0E48A246B94129C46 /* Resources */,
+				F995EADF359FC73E7DFD3416 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Novy;
+			packageProductDependencies = (
+				797F6D022AAE8315D996666E /* LiveViewNative */,
+				045ABF66CB9F9D5B0D82350B /* LiveViewNativeLiveForm */,
+			);
+			productName = Novy;
+			productReference = D12E8ACF2F4704F86EB28C48 /* Novy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD7F423AB8F661459AB6DE19 /* Novy Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F6FA98F1BD782430E574E92 /* Build configuration list for PBXNativeTarget "Novy Watch App" */;
+			buildPhases = (
+				73FF695E00C76F18496BF367 /* Sources */,
+				8C594872D2F1897099F5E5D7 /* Resources */,
+				7EFDFDB07499AD23F6A50D84 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Novy Watch App";
+			packageProductDependencies = (
+				D9C8C1AC8C98C88A90BA572D /* LiveViewNative */,
+				E913B6857B525F7E12158F3E /* LiveViewNativeLiveForm */,
+			);
+			productName = "Novy Watch App";
+			productReference = F122C8D1049ACAA0E490B1E6 /* Novy Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AABC56719FC9881DB74819D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B5C10FA91EFD39164CF5253F /* Build configuration list for PBXProject "Novy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C746B1B02441CFCA23F37BE3;
+			packageReferences = (
+				66B398E891A77F5D134E2C39 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */,
+				AB4DD6F9389C063A3CA11E85 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F348258A32EF136ED4B563AE /* Novy */,
+				FD7F423AB8F661459AB6DE19 /* Novy Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C594872D2F1897099F5E5D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF9B9382CD0596627CE6CA7 /* Assets.xcassets in Resources */,
+				5F61FC7B60C709089CF10D78 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91A01CF0E48A246B94129C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5430AB8A314F4E1EB0B9E9B2 /* Assets.xcassets in Resources */,
+				21D7DF84A7D3C788FC192C26 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D49CBCC3A3E70B65417781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B265CC1632E528BA6708DEB5 /* ConnectingView.swift in Sources */,
+				7F1C4654523AF6B08AC9AFF3 /* ContentView.swift in Sources */,
+				F8C12762D83489514822CE72 /* DisconnectedView.swift in Sources */,
+				0239B188A21FE3F2690177C7 /* ErrorView.swift in Sources */,
+				EE853EE65FE1DB434F7C5614 /* Novy.swift in Sources */,
+				704025A183E18F7795C1A94D /* ReconnectingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FF695E00C76F18496BF367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B887A7CB320E6F706B9E13F4 /* ConnectingView.swift in Sources */,
+				A43FAA03A2C1D6CD65087076 /* ContentView.swift in Sources */,
+				B07EB42574CEBF714458801A /* DisconnectedView.swift in Sources */,
+				114A07C189AFCABBB90C701B /* ErrorView.swift in Sources */,
+				432BEF44F6CD506E4741C2DA /* Novy.swift in Sources */,
+				7F6E10EC2D1573049B181156 /* ReconnectingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		451398AE2033F9B1BC622E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Novy;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Debug;
+		};
+		5047DA28FEC99F8794800F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Novy.watchkit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		64627D0FE9F43AC51F49F132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Novy.watchkit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		73D352F49EC76B3DF0C85D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Novy;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		B6815D772FCE1A83F25C4678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Novy;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.Novy;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		E4B9217B15CC23CC3006C761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Novy;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.Novy;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F6FA98F1BD782430E574E92 /* Build configuration list for PBXNativeTarget "Novy Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5047DA28FEC99F8794800F0D /* Debug */,
+				64627D0FE9F43AC51F49F132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74AD3B909F8260BF139B723D /* Build configuration list for PBXNativeTarget "Novy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451398AE2033F9B1BC622E7B /* Debug */,
+				73D352F49EC76B3DF0C85D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B5C10FA91EFD39164CF5253F /* Build configuration list for PBXProject "Novy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6815D772FCE1A83F25C4678 /* Debug */,
+				E4B9217B15CC23CC3006C761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66B398E891A77F5D134E2C39 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/liveview-native/liveview-client-swiftui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "0.4.0-rc.0";
+			};
+		};
+		AB4DD6F9389C063A3CA11E85 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/liveview-native/liveview-native-live-form";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "0.4.0-rc.0";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		045ABF66CB9F9D5B0D82350B /* LiveViewNativeLiveForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB4DD6F9389C063A3CA11E85 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */;
+			productName = LiveViewNativeLiveForm;
+		};
+		797F6D022AAE8315D996666E /* LiveViewNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66B398E891A77F5D134E2C39 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */;
+			productName = LiveViewNative;
+		};
+		D9C8C1AC8C98C88A90BA572D /* LiveViewNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66B398E891A77F5D134E2C39 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */;
+			productName = LiveViewNative;
+		};
+		E913B6857B525F7E12158F3E /* LiveViewNativeLiveForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB4DD6F9389C063A3CA11E85 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */;
+			productName = LiveViewNativeLiveForm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AABC56719FC9881DB74819D7 /* Project object */;
+}
