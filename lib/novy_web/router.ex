@@ -4,10 +4,15 @@ defmodule NovyWeb.Router do
   import NovyWeb.UserAuth
 
   pipeline :browser do
-    plug :accepts, ["html"]
+    plug :accepts, [
+      "html",
+      "swiftui"
+    ]
     plug :fetch_session
     plug :fetch_live_flash
-    plug :put_root_layout, html: {NovyWeb.Layouts, :root}
+    plug :put_root_layout,
+      html: {NovyWeb.Layouts, :root},
+      swiftui: {NovyWeb.Layouts.SwiftUI, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
     plug :fetch_current_user
@@ -78,10 +83,11 @@ defmodule NovyWeb.Router do
 
     live_session :current_user,
       on_mount: [{NovyWeb.UserAuth, :mount_current_user}] do
+
+      live "/", HomeLive
+
       live "/users/confirm/:token", UserConfirmationLive, :edit
       live "/users/confirm", UserConfirmationInstructionsLive, :new
-
-      live "/", HomeLive.Index, :index
 
       live "/todos", TodoLive.Index, :index
       live "/todos/new", TodoLive.Index, :new

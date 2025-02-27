@@ -39,7 +39,7 @@ defmodule Novy.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 4.1"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 1.0.0"},
+      {:phoenix_live_view, "1.0.1"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.3"},
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
@@ -59,7 +59,11 @@ defmodule Novy.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
-      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:live_view_native, "~> 0.4.0-rc.0"},
+      {:live_view_native_stylesheet, "~> 0.3.2"},
+      {:live_view_native_swiftui, "~> 0.4.0-rc.0"},
+      {:live_view_native_live_form, "~> 0.4.0-rc.0"}
     ]
   end
 

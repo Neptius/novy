@@ -9,7 +9,7 @@ import Config
 # Binding to loopback ipv4 address prevents access from other machines.
 config :novy, NovyWeb.Endpoint,
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {0, 0, 0, 0}, port: 4000],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
@@ -48,7 +48,10 @@ config :novy, NovyWeb.Endpoint,
     patterns: [
       ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/novy_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"lib/novy_web/(controllers|live|components)/.*(ex|heex)$",
+      ~r"lib/novy_web/(live|components)/.*neex$",
+      ~r"lib/novy_web/styles/.*ex$",
+      ~r"priv/static/*.styles$"
     ]
   ]
 
@@ -75,3 +78,7 @@ config :phoenix_live_view,
 config :swoosh, :api_client, false
 
 import_config "dev.secret.exs"
+
+config :live_view_native_stylesheet,
+  annotations: true,
+  pretty: true
