@@ -5,7 +5,7 @@
                 "
                 font(.subheadline);
                 fontWeight(.semibold);
-                foregroundColor(.teal);
+                foregroundStyle(.white);
                 "
             }>Phoenix Framework</Text>
             <Text style={
